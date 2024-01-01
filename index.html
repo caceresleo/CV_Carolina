@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="capsulaSuperior container">
+        <div class="margenSuperior"></div>
+    </div>
+    <header class="container-fluid ">
+        <div class="container  encabezadoDatos">            
+                <div class="imagenLogo ">
+                    <img class="fotoPpal" src="perfil.png" alt="fotoCarnet">
+                </div>
+                <div class="nombreProfesion ">
+                    <p >Carolina Bustos</p>
+                    <div class="profesion">
+                        <p id="profesionPrincipal">Magister Ingeniera en Telecomunicaciones </p>
+                    </div>
+                </div>
+        </div>    
+    </header>
+
+
+    <div class="container  contenidoTotal">
+            <aside class="bandaAside ">
+                <div class="listadoItems">
+                    <ul>
+                        <li><button onclick="seleccionSeccion('sobre')"> <i class="bi bi-person-bounding-box"></i>   Sobre Mi</button></li>
+                        <li><button onclick="seleccionSeccion('forma')"> <i class="bi bi-book-half"></i>   Formación Académica</button> </li>
+                        <li><button onclick="seleccionSeccion('leng')"> <i class="bi bi-globe2"></i>   Idiomas</button> </li>
+                        <li><button onclick="seleccionSeccion('expe')"> <i class="bi bi-briefcase-fill"></i>   Experiencia Laboral</button> </li>
+                        <li><button onclick="seleccionSeccion('conoc')"> <i class="bi bi-search-heart"></i>   Otros Conocimientos</button></li>
+                        <li><button onclick="seleccionSeccion('cont')"> <i class="bi bi-person-lines-fill"></i>   Contacto</button></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="seccionPrincipal ">
+                <section id="sobre" class="sobreMi container"  >
+                    <div class="fillSobre">
+                        <p>Sobre mi</p>
+                    </div>
+                    <div class="textoSobre">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sapien porta, faucibus erat in, tempus lorem.
+                             Aliquam aliquam porttitor pretium. Sed eget ipsum a urna vestibulum volutpat varius ac ipsum. Proin laoreet 
+                             vulputate eleifend. In eu rutrum lectus, eget ornare neque. Sed tincidunt dolor orci, sed scelerisque ipsum 
+                             tristique id. Duis aliquam quam ac dignissim scelerisque. Vestibulum ut ultrices mauris, vel aliquet massa. 
+                             Vestibulum turpis mauris, facilisis ac placerat a, pretium sit amet tortor. Vestibulum ante ipsum primis in
+                              faucibus orci luctus et ultrices posuere cubilia curae; Aenean a faucibus magna, at tristique enim. Cras 
+                              ornare neque eget mauris porta elementum. Donec scelerisque bibendum dignissim. Morbi et feugiat nunc. 
+                              Maecenas orci nunc, sodales ut enim eu, suscipit pretium lacus. Pellentesque mollis neque id maximus scelerisque. </p>
+                    </div>
+
+                </section>
+                <section id="forma" class="formacion container" >
+                    <div class="fillSobre">
+                        <p>Formación Académica</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <h3 class="nuevah3">Universidad Nacional de Río Cuarto – Córdoba.</h3>
+                                <h2 class="nuevah2"> <strong>Magister en Ciencias de la Ingeniería   - 2015 </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Tema de Investigación: Procesamiento de imágenes satelitales para la detección
+                                    de cambios multitemporales.  </p>
+                            </li>
+                            <hr>
+                            <li>
+                                <h3 class="nuevah3">Universidad Nacional de Río Cuarto – Córdoba.</h3>
+                                <h2 class="nuevah2"><strong>Ingeniera en Telecomunicaciones   -   2007 </strong></h2>
+                                <!--
+                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+                                    -->
+                            </li>
+                            <hr>
+                            <li>
+                                <h3 class="nuevah3">Instituto “Capacitación IT”. Córdoba–Córdoba.</h3>
+                                <h2 class="nuevah2"><strong>Administradora Junior en Plataforma UNIX, versión Solaris  -  2007 </strong></h2>
+                                <!--
+                                <p><i class="bi bi-arrow-right-short"></i> Bachiller con orientación en economía.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Integrante de las Olimpíadas Matemáticas.  </p>
+                                -->
+                            </li>                           
+                        </ul>
+                    </div>
+                </section>   
+
+                <section id="expe" class="experiencia container" >
+                    <div class="fillSobre">
+                        <p>Experiencia Laboral</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Comisión Nacional de Actividades Espaciales (Falda del Carmen).</strong></h2>
+                                <h3 class="nuevah3"> 2021  -  Actualidad </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Proyecto Red de Telemetría de Humedad del Suelo. Proyecto satelital SABIAMAR.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Convenio Comité de Montañas. </p>
+
+                            </li>
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Escuela ProA Centro Pucará (Córdoba) </strong></h2>
+                                <h3 class="nuevah3"> 2022  -  Actualidad </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Profesora del espacio
+                                    curricular Testing en 6to año. </p>
+                            </li>
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Claro. (Córdoba).  </strong></h2>
+                                <h3 class="nuevah3"> Analista de Acceso de Red Móvil - 2020 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Control de cambios, reporte,
+                                    escalamiento, reclamos y solución de fallas en los Elementos de Core, Acceso, Energía y
+                                    datos que afectan los servicios móviles en cualquier tecnología 2G-3G-4G.  </p>
+                            </li>        
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Universidad de Villa Mercedes (Villa Mercedes).  </strong></h2>
+                                <h3 class="nuevah3"> Jefe de Trabajos Prácticos - 2019 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> “Manejo de TICs” (Tecnologías de la Información y la Comunicación). Ingreso a
+                                    Medicina.  </p>
+                            </li>     
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Privatel S.R.L (San Carlos de Bariloche).  </strong></h2>
+                                <h3 class="nuevah3"> Encargada de proyectos - 2018 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Encargada de proyectos de
+                                    telecomunicaciones de empresas públicas y privadas. Tecnologías utilizadas: Leaky
+                                    Feeder, Fibra Óptica e Internet Satelital (routers MikroTic).  </p>
+                            </li>  
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Invap S.E (San Carlos de Bariloche).  </strong></h2>
+                                <h3 class="nuevah3"> 2014 - 2017 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Ingeniería Conceptual, Ingeniería de
+                                    Requerimientos, Planificación y Cotización para sistema de navegación marítima.
+                                    Integración eléctrica para Electrónica Central de Antena SAR de SAOCOM. Testeo del
+                                    simulador de satélite. Verificación de telecomandos y telemetrías en los Modelos de
+                                    Ingeniería y Vuelo de SAOCOM.  </p>
+                            </li>   
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Tecnología S.A. (Laboulaye).  </strong></h2>
+                                <h3 class="nuevah3"> 2014 </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Mejora de equipos. Desarrollo de nuevos
+                                    productos.  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Documentación de procedimientos para el sector de Producción.  </p>    
+                            </li>                                                                                   
+                            
+                        </ul>
+                    </div>
+                </section>    
+
+                <section id="leng" class="idiomas container" >
+                    <div class="fillSobre">
+                        <p>Idiomas</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <div class="idiomaEsp">
+                                    <img class="idiomaBandera" src="espana.png" alt="ES">
+                                  <div class="progress mt-2" style="height: 25px;">
+                                    <div class="progress-bar  bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><strong>Nativo</strong> </div>
+                                  </div>
+                                </div>  
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="idiomaIng">
+                                    <img class="idiomaBandera" src="reino-unido.png" alt="UK">
+                                  <div class="progress mt-2" style="height: 25px;">
+                                    <div class="progress-bar  bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><strong>Intermedio -  Lectura y Escritura </strong> </div>
+                                  </div>
+                                </div> 
+
+                            </li>
+                            <hr>
+                            <li>
+                                <div >
+                                    <img  class="idiomaBandera" src="francia.png" alt="FR">
+                                  <div class="progress mt-2" style="height: 25px;">
+                                    <div class="progress-bar  bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><strong>Básico -  Lectura y Escritura </strong> </div>
+                                  </div>
+                                </div> 
+                            </li>                         
+                        </ul>
+                    </div>
+                </section>         
+                
+                <section id="cont" class="contacto container" >
+                    <div class="fillSobre">
+                        <p>Contacto</p>
+                    </div>
+                    <div class="contenidoContactos">
+                        <ul>
+                            <li>
+                                <div class="espacioContactos">
+
+                                    <i class="bi bi-phone"></i>
+                                    <p > +54 (0358) 154209546</p>
+
+                                </div>  
+                            </li>
+                            <li>
+                                <div class="espacioContactos" onClick="mailTo()">
+
+                                    <i class="bi bi-envelope-paper"></i>
+                                    <p > noirybriana@gmail.com</p>
+
+                                </div> 
+
+                            </li>
+                            <li>
+                                <div class="espacioContactos" onClick="envioWap()" >
+
+                                    <i class="bi bi-whatsapp"></i>
+                                    <p>+54 9 3584209546</p>
+
+                                </div> 
+                            </li>  
+                            <!--
+                            <li>
+                                <div class="espacioContactos">
+
+                                    <i class="bi bi-house"></i>
+                                    <p><span id="calle"></span> <span id="numero"></span> - <span id="codigo"></span> - <span id="estado"></span>.</p>
+
+                                </div> 
+                            </li>  
+                            -->                              
+                            
+                        </ul>
+                    </div>
+                </section>    
+                
+                <section id="conoc" class="conocimientos container" >
+                    <div class="fillSobre">
+                        <p>Otros Conocimientos</p>
+                    </div>
+                    <div class="contenidoFormacion">
+                        <ul>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Cursos Postgrado  </strong></h2>
+                                <p><i class="bi bi-arrow-right-short"></i> Análisis espacial y situaciones de riesgo  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> MeTCaMP Testing. Capacitación online intensiva en testing de software  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Conceptos de Ingeniería de Sistemas Espaciales y Aseguramiento </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Introducción a la programación en Python I  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Teleobservación de aguas marinas, costeras e interiores  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Imágenes y Machine Learning en Python  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Métodos Numéricos  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Técnicas Estadísticas </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Ecuaciones Diferenciales y Sistemas Dinámicos  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Introducción a las Redes Neuronales Artificiales y Aplicaciones  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Modelos numéricos de alerta temprana, mapas de riesgo, simulación  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Introducción a la Cartografía Digital Geomorfológica y Edafológica  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Introducción a los Sistemas de Información Geográfica (SIG) y al análisis espacial
+                                    apoyado sobre la aplicación ArcView  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Introducción a la Estadística Multivariada  </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Procesamiento de señales utilizando Transformada Wavelet  </p>
+
+
+                            </li>
+                            <hr>
+                            <li>
+                                <h2 class="nuevah2"> <strong>Informática  </strong></h2>
+                                <h3 class="nuevah3"> Lenguajes de Programación: </h3>
+                                    <p><i class="bi bi-arrow-right-short"></i> Python (librerías
+                                    espaciales)  </p>
+                                    <p><i class="bi bi-arrow-right-short"></i> Básico en JavaScript  </p>
+
+                                <h3 class="nuevah3"> Software especializado: </h3>
+                                    <p><i class="bi bi-arrow-right-short"></i> MPLAB </p>
+                                    <p><i class="bi bi-arrow-right-short"></i> Procesamiento de datos
+                                        satelitales: ENVI, ArcView,
+                                        ArcGIS, SeaDAS, SNAP  </p>
+                                <h3 class="nuevah3"> Pruebas y Testing: </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Testing exploratorio </p>
+                                <p><i class="bi bi-arrow-right-short"></i> Testing automatizado </p>
+                                <h3 class="nuevah3"> Sistemas Operativos: </h3>
+                                <p><i class="bi bi-arrow-right-short"></i> Microsoft Windows </p>
+                                <p><i class="bi bi-arrow-right-short"></i> UNIX, versión Solaris </p>
+
+
+  
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </section>   
+                
+            </section>
+           
+    </div>  
+    
+    <!--
+
+    <footer>
+        <img class="footer-logo rounded-circle" src="Logo.png" alt="Logo_principal">
+
+        <p class="footer-texto text-center">&#x1F447; &#x1F447; ¡¡ CONTACTAME Y HACEMOS EL TUYO !! &#x1F600; &#x1F447; &#x1F447;</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+
+          <a href="https://facebook.com/ingenieria.y.proyectosweb/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://www.instagram.com/ingenieria.y.proyectosweb/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>   
+          <a href="mailto:info@ingenieriayproyectosweb.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>   
+          <a href="https://wa.me/5492914319897?text=Tengo%20interes%20en%20diseñar%20un%20CurriculumVitae" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i>
+          </a>             
+        </div>
+        <div class="derechos-de-autor">Creado por ingenieria & proyectosweb &#169;</div>
+         
+    </footer>
+    -->
+     <script src="js/contenidoscript.js"></script>
+
+</body>
+</html>
